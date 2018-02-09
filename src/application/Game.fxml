@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="anchor" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameController">
+   <children>
+      <BorderPane layoutX="176.0" layoutY="70.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="350.0" />
+                  <Button mnemonicParsing="false" text="View Hand" />
+                  <Button mnemonicParsing="false" text="Pass" />
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </center>
+         <left>
+            <VBox prefHeight="400.0" prefWidth="193.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+                  <Label text="CPU 1" textFill="#fcfafa" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+                  <Label text="Cards Remaining:" textFill="#fcf9f9" />
+                  <Label text="# of cards left in hand" textFill="#fffbfb" />
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="350.0" />
+                  <VBox prefHeight="100.0" prefWidth="203.0">
+                     <children>
+                        <Label text="CPU 2" textFill="#f8f5f5" />
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                        <Label text="Cards Remaining:" textFill="#f5f0f0" />
+                        <Label text="# of cards left in hand" textFill="#f5f0f0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </top>
+         <right>
+            <VBox prefHeight="400.0" prefWidth="132.0" BorderPane.alignment="CENTER_LEFT">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+                  <Label text="CPU 3" textFill="#fffafa" />
+                  <HBox prefHeight="100.0" prefWidth="182.0" />
+                  <Label text="Cards Remaining:" textFill="#f5f2f2" />
+                  <Label text="# of cards left in hand" textFill="#f5efef" />
+               </children>
+            </VBox>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
